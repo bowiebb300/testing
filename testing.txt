@@ -1,0 +1,153 @@
+$$
+H(\mathbf{SQ}_A,\mathbf{SQ}_X,\mathbf{d}_A) = (\mathbf{SQ}_A,\mathbf{SQ}_X)^T\boldsymbol{\ell} -\mathbf{RQ}_A^T \mathbf{d}_A - \frac{1}{2}\boldsymbol{\ell}^T\boldsymbol{F} \boldsymbol{\ell}
+$$
+
+$$
+H(\mathbf{SQ}_A,\mathbf{SQ}_X,\mathbf{d}_A) = (\mathbf{SQ}_A,\mathbf{SQ}_X)^T \mathbf{O}\mathbf{d}_A - \mathbf{RQ}_A^T \mathbf{d}_A - \frac{1}{2} \mathbf{d}_A^T \mathbf{O}^T \boldsymbol{F} \mathbf{O}\mathbf{d}_A
+$$
+
+$$
+\frac{\partial H(\mathbf{SQ}_A,\mathbf{SQ}_X,\mathbf{d}_A)}{\partial d_i} = (\mathbf{SQ}_A,\mathbf{SQ}_X)^T \mathbf{o}_i - \mathbf{RQ}_i - (\mathbf{O}^T \boldsymbol{F} \mathbf{O}\mathbf{d}_A)_i
+$$
+
+$$
+\mathbf{c}_{A + X}^T \boldsymbol{\ell} = \mathbf{c}_{A}^T \mathbf{d}_A
+$$
+
+$$
+\mathbf{N} = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & -1 \end{bmatrix}
+$$
+
+$$
+\mathbf{N} = \begin{bmatrix} \mathbf{V}_{A-1} & \mathbf{0} & -\mathbf{j} \\ \mathbf{0} & 1 & 1 \end{bmatrix}
+$$
+
+$$
+\boldsymbol{\ell} = \arg\min_{\boldsymbol{\ell}} \boldsymbol{\ell}^{T}\boldsymbol{F} \boldsymbol{\ell}
+$$
+
+$$
+\mathrm{fhwrwrg~gb~} \mathbf{d}_A = \mathbf{N}\boldsymbol{\ell}
+$$
+
+$$
+\boldsymbol{\ell} = \mathbf{O}\mathbf{d}_A
+$$
+
+$$
+\mathbf{O} = \boldsymbol{F}^{-1}\mathbf{N}^{T}(\mathbf{N}\boldsymbol{F}^{-1}\mathbf{N}^{T})^{-1}
+$$
+
+$$
+\tilde{\mathbf{o}}_{DDD} = \begin{bmatrix} 1 - \lambda_{DDD} \\ \lambda_{DDD} \\ \lambda_{DDD} \end{bmatrix}
+$$
+
+$$
+\tilde{\mathbf{o}}_{AD} = \begin{bmatrix} -\lambda_{AD} \\ 1 + \lambda_{AD} \\ -\lambda_{AD} \end{bmatrix}
+$$
+
+$$
+\mathrm{GR} = \tilde{\mathbf{O}}^{T}(\mathbf{SQ}_{A},\mathbf{SQ}_{X}) - \mathbf{RQ}_{A} - \frac{1}{2} \tilde{\mathbf{O}}^{T}\boldsymbol{F} \tilde{\mathbf{O}}\mathbf{d}
+$$
+
+$$
+\tilde{\mathbf{o}}_{DDD}^T \begin{bmatrix} \mathrm{SQ}_{DDD} \\ \mathrm{SQ}_{AD} \\ \mathrm{SQ}_{\mathrm{Onfvf}} \end{bmatrix} = \begin{bmatrix} 1-\lambda_{DDD} & \lambda_{DDD} & \lambda_{DDD} \end{bmatrix} \begin{bmatrix} \mathrm{SQ}_{DDD} \\ \mathrm{SQ}_{AD} \\ \mathrm{SQ}_{\mathrm{Onfvf}} \end{bmatrix}
+$$
+
+$$
+= (1 - \lambda_{DDD})\mathrm{SQ}_{DDD} + \lambda_{DDD}\mathrm{SQ}_{AD} + \lambda_{DDD}\mathrm{SQ}_{\mathrm{Onfvf}}
+$$
+
+$$
+= \mathrm{SQ}_{DDD} - \lambda_{DDD}(\mathrm{SQ}_{DDD} - \mathrm{SQ}_{AD} - \mathrm{SQ}_{\mathrm{Onfvf}})
+$$
+
+$$
+z = \mathrm{SQ}_{DDD} - \mathrm{SQ}_{AD} - \mathrm{SQ}_{\mathrm{Onfvf}}
+$$
+
+$$
+\tilde{\mathbf{o}}_{DDD}^T(\mathbf{SQ}_A, \mathbf{SQ}_X) = \mathrm{SQ}_{DDD} - \lambda_{DDD} \cdot z
+$$
+
+$$
+\tilde{\mathbf{o}}_{AD}^T(\mathbf{SQ}_A, \mathbf{SQ}_X) = \mathrm{SQ}_{AD} + \lambda_{AD} \cdot z
+$$
+
+$$
+\mathrm{GR}_{i} = \mathrm{SQ}_{i} - \mathrm{RQ}_{i} - E + \sum_{j = 1}^{X}\lambda_{i}^{j}z_{j}
+$$
+
+$$
+\mathrm{GR}_{i} = \alpha_{US} - E + \sum_{j = 1}^{X}\lambda_{i}^{j}z_{j}
+$$
+
+$$
+\mathbf{O} = \begin{bmatrix} 
+\mathbf{V}_{A-1} & \mathbf{0} \\ 
+\mathbf{0} & 1 \\ 
+-\mathbf{p}^T & 1 
+\end{bmatrix} 
++ 
+\begin{bmatrix} 
+\mathbf{0} \\ 
+\mathbf{0} \\ 
+1 
+\end{bmatrix} 
+\boldsymbol{\lambda}^T
+$$
+
+$$
+- \sum p_{i}\lambda_{i} + \lambda_{A} = - 1
+$$
+
+$$
+\boldsymbol{\Lambda} \mathbf{Z} = -\mathbf{V}
+$$
+
+$$
+\mathrm{zvfc} = \mathrm{SQ}_{shg} - \mathrm{SQ}_{vaq} - \mathrm{onfvf}
+$$
+
+$$
+\begin{bmatrix}
+\lambda_{1} \\
+\lambda_{2} \\
+\vdots \\
+\lambda_{A-1} \\
+\lambda_{A}
+\end{bmatrix}
+=
+\frac{1}{C_{vaq}}
+\begin{bmatrix}
+\beta c_{1} \\
+\beta c_{2} \\
+\vdots \\
+\beta c_{A-1} \\
+0
+\end{bmatrix}
+$$
+
+$$
+\mathrm{GR}_{1} = r_{1} + \frac{c_{1}}{C_{vaq}}\left(\mathrm{SQ}_{shg} - \sum p_{i}\mathrm{SQ}_{i} - \mathrm{onfvf}\right) - \mathrm{RQ}_{1}
+$$
+
+$$
+= \left[\frac{\mathrm{SQ}_{1} - \mathrm{RQ}_{1}}{c_{1}} +\frac{\mathrm{SQ}_{shg} - \sum p_{i}\mathrm{SQ}_{i} - \mathrm{onfvf}}{C_{vaq}}\right]c_{1}
+$$
+
+$$
+= \left(\alpha_{US}^{ocf} + \mathrm{zvfc}^{ocf}\right)c_{1}
+$$
+
+$$
+\mathrm{GR}_{A} = \alpha_{US}^{ocf}
+$$
+
+$$
+\mathrm{GR}_{1} = (\alpha_{US}^{ocf} + \beta \mathrm{zvfc}^{ocf})c_{1}
+$$
+
+$$
+\mathrm{GR}_{A} = \alpha_{US}^{ocf} - (1 - \beta) \mathrm{zvfc}^{ocf}
+$$
